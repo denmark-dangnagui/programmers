@@ -4,7 +4,7 @@ def solution(name):
     for i, c in enumerate(name):
         cnt += min(ord(c) - ord('A'), ord('Z') - ord(c) + 1)
         next_ = i + 1
-        while len(name) > next_ and name[next_] == 'A':
+        while len(name) > next_ and name[next_] == 'A': # 제일 긴 A 구간을 찾는 것.
             next_ += 1
         move_l = (i * 2) + len(name) - next_
         move_r = (len(name) - next_) * 2 + i
