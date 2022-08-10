@@ -15,7 +15,5 @@ def solution(answers):
     score.append(p_b)
     score.append(p_c)
     result = list(filter(lambda x: score[x] == max(score), range(len(score))))
-    e = []
-    for i in result:
-        e.append(i+1)
+    e = list(map(lambda x : x + 1, result))
     return e
