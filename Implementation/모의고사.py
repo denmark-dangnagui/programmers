@@ -8,7 +8,7 @@ def solution(answers):
         if a[i] == answers[i]:
             p_a += 1
         if b[i] == answers[i]:
-            p_b += 1
+            p_b += 1 
         if c[i] == answers[i]:
             p_c += 1
     score.append(p_a)
