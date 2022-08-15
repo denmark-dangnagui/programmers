@@ -6,9 +6,9 @@ def solution(k, dungeons):
         hp = k
         cnt = 0
         for j in i:
-            hp -= j[1]
-            if hp < 0:
+            if hp < j[0]:
                 break
+            hp -= j[1]
             cnt += 1
         if cnt > result:
             result = cnt
