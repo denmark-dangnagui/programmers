@@ -9,5 +9,5 @@ def solution(prices):
             if p[0] > p[j+1]:
                 break
         p.popleft()
-        answer.append(sec) 
+        answer.append(sec)
     return answer
