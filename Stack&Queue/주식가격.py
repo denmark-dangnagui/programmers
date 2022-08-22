@@ -10,4 +10,4 @@ def solution(prices):
                 break
         p.popleft()
         answer.append(sec)
-    return answer
+    return answer 
